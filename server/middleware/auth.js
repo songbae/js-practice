@@ -1,5 +1,5 @@
 import jwt from 'jsonwebtoken';
-import config from '../config//index';
+import config from '../config/index';
 const { JWT_SECRET } = config;
 const auth = (req, res, next) => {
     const token = req.header('x-auth-token');
